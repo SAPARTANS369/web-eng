@@ -1,11 +1,164 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>About | Chatbase</title><link href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css" rel="stylesheet">
-<style>
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-:root{--ink:#101828;--muted:#667085;--line:#e6e8f0;--purple:#6d5dfc;--violet:#8b5cf6;--pink:#ec4899;--blue:#3b82f6;--bg:#f6f7ff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:'DM Sans',sans-serif;color:var(--ink);background:radial-gradient(circle at 8% 8%,#ddd8ff 0,transparent 24%),radial-gradient(circle at 92% 20%,#d9efff 0,transparent 25%),linear-gradient(135deg,#fafaff,#f4f7ff 55%,#fbf5ff)}
-a{text-decoration:none;color:inherit}.navbar{height:76px;background:rgba(255,255,255,.82);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.8);position:sticky;top:0;z-index:20}.nav-inner{max-width:1160px;margin:auto;height:100%;padding:0 24px;display:flex;align-items:center;gap:42px}.brand{font-family:'Space Grotesk';font-weight:700;font-size:21px;display:flex;align-items:center;gap:10px}.brand-mark{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#6d5dfc,#b24cff);color:#fff;display:grid;place-items:center;box-shadow:0 8px 20px #6d5dfc40}.nav-links{display:flex;gap:28px;color:#475467;font-size:14px;font-weight:600}.nav-links a:hover{color:var(--purple)}.auth-links{margin-left:auto;display:flex;gap:10px}.btn{display:inline-flex;align-items:center;justify-content:center;border-radius:10px;padding:11px 17px;font-size:14px;font-weight:700;border:1px solid transparent;transition:.2s}.btn-gradient{background:linear-gradient(135deg,#635bff,#9b4dff 55%,#ec4899);color:#fff;box-shadow:0 10px 24px #725cff30}.btn-gradient:hover{transform:translateY(-1px);box-shadow:0 14px 30px #725cff45}.btn-soft{background:rgba(255,255,255,.8);border-color:#e1e4ee}.btn-soft:hover{background:#fff}.container{max-width:1100px;margin:auto;padding:0 24px}
-.hero{padding:92px 0 82px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:62px;align-items:center}.eyebrow{display:inline-flex;padding:7px 11px;border-radius:999px;background:#fff;border:1px solid #e5e1ff;color:#6555e8;font-size:12px;font-weight:800;letter-spacing:.04em}.hero h1{font-family:'Space Grotesk';font-size:60px;line-height:1.01;letter-spacing:-.055em;margin:17px 0 22px;background:linear-gradient(90deg,#101828,#6d5dfc 55%,#ec4899);-webkit-background-clip:text;background-clip:text;color:transparent}.hero p{font-size:18px;line-height:1.7;color:var(--muted);max-width:620px}.hero-actions{display:flex;gap:12px;margin-top:30px}.hero-card{position:relative;background:linear-gradient(145deg,#16112d,#30205b 55%,#7b3ff2);border-radius:28px;padding:18px;box-shadow:0 30px 70px #5b43b533;transform:rotate(1.2deg)}.hero-card:before{content:"";position:absolute;width:160px;height:160px;border-radius:50%;background:#ec489955;filter:blur(35px);right:-35px;top:-35px}.chat-window{position:relative;background:rgba(255,255,255,.96);border-radius:18px;overflow:hidden}.chat-top{padding:16px 18px;border-bottom:1px solid var(--line);font-weight:800;font-family:'Space Grotesk'}.bubble{margin:17px;padding:14px 16px;border-radius:14px;background:#f2f4f7;color:#344054;font-size:14px;line-height:1.55}.bubble.ai{background:linear-gradient(135deg,#eeeaff,#fce9f6);margin-left:42px}
-.section{padding:82px 0}.section-head{text-align:center;max-width:700px;margin:0 auto 44px}.section-head h2{font-family:'Space Grotesk';font-size:38px;letter-spacing:-.04em;margin:0 0 12px}.section-head p,.muted{color:var(--muted);line-height:1.65}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.card{background:rgba(255,255,255,.78);border:1px solid rgba(224,227,238,.9);border-radius:18px;padding:25px;box-shadow:0 14px 35px rgba(51,48,95,.06);backdrop-filter:blur(10px)}.card:hover{box-shadow:0 18px 42px rgba(91,67,179,.12)}.card h3{font-family:'Space Grotesk';margin:13px 0 8px;font-size:19px}.icon-box{width:42px;height:42px;border-radius:12px;background:linear-gradient(135deg,#ece9ff,#f9e8ff);color:#6d5dfc;display:grid;place-items:center;font-weight:800}.tag{display:inline-block;padding:7px 11px;border-radius:999px;background:#fff;border:1px solid #e4e1ff;color:#6959eb;font-size:12px;font-weight:800}.dark-section{background:linear-gradient(135deg,#17142c,#2a1851 55%,#3c174b);color:#fff;position:relative;overflow:hidden}.dark-section:before{content:"";position:absolute;width:300px;height:300px;border-radius:50%;background:#8b5cf655;filter:blur(55px);right:5%;top:-100px}.dark-section .section-head,.dark-section .container{position:relative}.dark-section .muted{color:#c7c3d8}.dark-card{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.13);box-shadow:none}.dark-card .metric{background:linear-gradient(90deg,#b5aaff,#ff9fd2);-webkit-background-clip:text;color:transparent}.metric{font-size:32px;font-family:'Space Grotesk';font-weight:700}.footer{max-width:1100px;margin:auto;padding:40px 24px;display:grid;grid-template-columns:1fr auto auto;gap:36px;align-items:center;border-top:1px solid rgba(220,223,235,.8);color:var(--muted);font-size:13px}.footer-brand{font-family:'Space Grotesk';font-weight:700;color:var(--ink);font-size:18px;margin-bottom:6px}.footer p{margin:0}.footer-links{display:flex;gap:22px}.footer-copy{text-align:right}.page-head{padding:78px 0 42px;text-align:center}.page-head h1{font-family:'Space Grotesk';font-size:48px;margin:0 0 12px;letter-spacing:-.045em;background:linear-gradient(90deg,#101828,#6d5dfc,#ec4899);-webkit-background-clip:text;color:transparent}.page-head p{color:var(--muted);max-width:650px;margin:auto;line-height:1.65}.timeline{border-left:2px solid #e1ddff;margin:20px 0 0 15px;padding-left:28px}.timeline-item{position:relative;margin-bottom:30px}.timeline-item:before{content:"";position:absolute;left:-36px;top:4px;width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,#6d5dfc,#ec4899);border:3px solid #eeeaff}.quote{font-size:16px;line-height:1.7;color:#475467}.person{font-weight:700;margin-top:14px}.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.stat{text-align:center;padding:26px}.stat strong{display:block;font:700 32px 'Space Grotesk';background:linear-gradient(90deg,#6d5dfc,#ec4899);-webkit-background-clip:text;color:transparent}.form-wrap{max-width:800px;margin:auto}.form-card{background:rgba(255,255,255,.86);border:1px solid #e0e3ef;border-radius:20px;padding:32px;box-shadow:0 22px 55px rgba(74,63,142,.08)}.label{display:block;font-size:13px;font-weight:700;margin-bottom:7px;color:#344054}.input,.textarea{width:100%;border:1px solid #d7dbe7;border-radius:10px;padding:12px 13px;font:inherit;outline:none;background:#fff}.input:focus,.textarea:focus{border-color:#8b7cff;box-shadow:0 0 0 4px #8b7cff18}.textarea{min-height:135px;resize:vertical}.field{margin-bottom:18px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.form-note{font-size:12px;color:var(--muted);margin-top:12px}.auth-page{min-height:calc(100vh - 76px);display:grid;place-items:center;padding:65px 24px;background:radial-gradient(circle at 50% 10%,#dcd6ff,transparent 30%),radial-gradient(circle at 85% 80%,#ffd9ed,transparent 25%)}.auth-card{width:100%;max-width:450px;background:rgba(255,255,255,.88);backdrop-filter:blur(15px);border:1px solid #e2e3ef;border-radius:20px;padding:34px;box-shadow:0 28px 70px rgba(69,55,140,.12)}.auth-card h1{font-family:'Space Grotesk';text-align:center;margin:0 0 8px;font-size:32px}.auth-card>p{text-align:center;color:var(--muted);font-size:14px;margin:0 0 28px}.small-link{color:#6858ed;font-weight:700}.feature-list{display:grid;gap:12px;margin-top:18px}.feature{display:flex;gap:12px;align-items:flex-start}.check{width:22px;height:22px;border-radius:7px;background:linear-gradient(135deg,#eeeaff,#fbe6f4);color:#6d5dfc;display:grid;place-items:center;font-weight:800;font-size:12px;flex:none}
-@media(max-width:800px){.nav-inner{gap:16px}.nav-links{gap:14px}.hero-grid,.grid-3,.grid-2,.stat-row{grid-template-columns:1fr}.hero h1{font-size:46px}.footer{grid-template-columns:1fr}.footer-copy{text-align:left}.form-grid{grid-template-columns:1fr}.auth-links .btn-soft{display:none}}
-</style>
-</head><body><nav class="navbar"><div class="nav-inner"><a class="brand" href="index.html"><span class="brand-mark">C</span>Chatbase</a><div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="auth-links"><a href="signup.html" class="btn btn-soft">Sign Up</a><a href="signin.html" class="btn btn-gradient">Sign In</a></div></div></nav><main><section class="page-head"><div class="container"><h1>About Chatbase</h1><p>A focused AI-agent platform for turning business knowledge into useful customer conversations.</p></div></section><section class="section"><div class="container"><div class="grid-2"><div class="card"><span class="tag">Our approach</span><h2>Make business knowledge easier to use.</h2><p class="muted">Chatbase is built around a simple idea: businesses already have valuable information. AI can make that information easier for customers to access through natural conversation.</p><div class="feature-list"><div class="feature"><span class="check">✓</span><span>Use existing business knowledge</span></div><div class="feature"><span class="check">✓</span><span>Deliver consistent customer answers</span></div><div class="feature"><span class="check">✓</span><span>Keep the experience simple</span></div></div></div><div class="card"><span class="tag">Timeline</span><div class="timeline"><div class="timeline-item"><h3>Knowledge</h3><p class="muted">Bring your documentation and business content into one AI-ready source.</p></div><div class="timeline-item"><h3>Agent</h3><p class="muted">Configure how the AI communicates and handles customer questions.</p></div><div class="timeline-item"><h3>Conversation</h3><p class="muted">Deploy a customer-facing experience that can answer questions naturally.</p></div></div></div></div></div></section><section class="section" style="padding-top:0"><div class="container"><div class="section-head"><h2>At a glance</h2><p>Key ideas behind the platform.</p></div><div class="stat-row"><div class="card stat"><strong>AI</strong><span class="muted">Agent-based support</span></div><div class="card stat"><strong>24/7</strong><span class="muted">Customer availability</span></div><div class="card stat"><strong>1</strong><span class="muted">Unified knowledge source</span></div></div></div></section><section class="section" style="padding-top:0"><div class="container"><div class="section-head"><h2>What teams value</h2></div><div class="grid-3"><div class="card"><p class="quote">“A clean way to turn documentation into a customer-facing conversation.”</p><div class="person">Product teams</div></div><div class="card"><p class="quote">“Useful answers should start with the information your business already has.”</p><div class="person">Support teams</div></div><div class="card"><p class="quote">“Simple experiences make AI easier for customers to adopt.”</p><div class="person">Growth teams</div></div></div></div></section></main><footer class="footer"><div><div class="footer-brand">Chatbase</div><p>Build AI agents that know your business.</p></div><div class="footer-links"><a href="index.html">Home</a><a href="about.html">About</a><a href="contact.html">Contact</a></div><div class="footer-copy">© 2026 Chatbase. All rights reserved.</div></footer></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Chatbase</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans flex flex-col min-h-screen">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-slate-900 border-b border-slate-800 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="index.html" class="flex items-center gap-3">
+          <span class="w-8 h-8 rounded-lg bg-indigo-600 flex items-center justify-center font-bold text-white shadow-md">C</span>
+          <span class="font-bold text-xl tracking-tight">Chatbase</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm font-semibold text-slate-300">
+          <a href="index.html" class="hover:text-indigo-400">Home</a>
+          <a href="about.html" class="text-white hover:text-indigo-400">About</a>
+          <a href="contact.html" class="hover:text-indigo-400">Contact</a>
+        </nav>
+        <div class="flex items-center gap-3">
+          <a href="signup.html" class="text-sm font-semibold text-slate-300 hover:text-white px-3 py-2">Sign Up</a>
+          <a href="signin.html" class="text-sm font-semibold bg-indigo-600 hover:bg-indigo-500 text-white px-4 py-2 rounded-lg shadow">Sign In</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="flex-grow py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl mb-4">About Chatbase</h1>
+        <p class="text-lg text-slate-600">A focused AI-agent platform for turning business knowledge into useful customer conversations.</p>
+      </div>
+
+      <!-- Core Mission -->
+      <div class="grid md:grid-cols-2 gap-8 mb-16">
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-bold rounded-full mb-4">Our Approach</span>
+          <h2 class="text-2xl font-bold text-slate-900 mb-4">Make business knowledge easier to use.</h2>
+          <p class="text-slate-600 mb-6">Chatbase is built around a simple idea: businesses already have valuable information. AI can make that information easier for customers to access through natural conversation.</p>
+          <ul class="space-y-3 font-semibold text-slate-700">
+            <li class="flex items-center gap-3"><span class="text-indigo-600 font-bold">✓</span> Use existing business knowledge</li>
+            <li class="flex items-center gap-3"><span class="text-indigo-600 font-bold">✓</span> Deliver consistent customer answers</li>
+            <li class="flex items-center gap-3"><span class="text-indigo-600 font-bold">✓</span> Keep the experience simple</li>
+          </ul>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm">
+          <span class="inline-block px-3 py-1 bg-indigo-100 text-indigo-700 text-xs font-bold rounded-full mb-4">Timeline</span>
+          <div class="space-y-6 border-l-2 border-indigo-200 pl-6 mt-4">
+            <div>
+              <h3 class="font-bold text-slate-900">Knowledge</h3>
+              <p class="text-slate-600 text-sm mt-1">Bring your documentation and business content into one AI-ready source.</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900">Agent</h3>
+              <p class="text-slate-600 text-sm mt-1">Configure how the AI communicates and handles customer questions.</p>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-900">Conversation</h3>
+              <p class="text-slate-600 text-sm mt-1">Deploy a customer-facing experience that can answer questions naturally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Company Values -->
+      <div class="mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Our Values</h2>
+          <p class="text-slate-600 mt-2">The principles driving how we build AI software for real businesses.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Clarity Over Complexity</h3>
+            <p class="text-slate-600 text-sm">We strip away unnecessary configuration options to give you an interface that works straight out of the box.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Grounded Accuracy</h3>
+            <p class="text-slate-600 text-sm">AI responses should stick strictly to verified business documentation to eliminate false assumptions.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <h3 class="font-bold text-lg text-slate-900 mb-2">Seamless Integration</h3>
+            <p class="text-slate-600 text-sm">Software should adapt to your current workflow, not force your support teams to adopt entirely new habits.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Leadership / Team -->
+      <div class="mb-16">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <h2 class="text-3xl font-extrabold text-slate-900 tracking-tight">Meet the Team</h2>
+          <p class="text-slate-600 mt-2">Engineers and designers focused on simple human-AI interaction.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8 text-center">
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="w-16 h-16 bg-indigo-100 text-indigo-700 font-extrabold text-xl rounded-full flex items-center justify-center mx-auto mb-4">AK</div>
+            <h3 class="font-bold text-slate-900">Alex Khan</h3>
+            <p class="text-xs text-indigo-600 font-semibold mb-2">Co-Founder & CEO</p>
+            <p class="text-slate-600 text-xs">Ex-software architect focused on democratizing generative AI systems.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="w-16 h-16 bg-indigo-100 text-indigo-700 font-extrabold text-xl rounded-full flex items-center justify-center mx-auto mb-4">DR</div>
+            <h3 class="font-bold text-slate-900">David Reynolds</h3>
+            <p class="text-xs text-indigo-600 font-semibold mb-2">CTO</p>
+            <p class="text-slate-600 text-xs">Specialist in vector embeddings, neural retrieval, and backend pipeline latency.</p>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm">
+            <div class="w-16 h-16 bg-indigo-100 text-indigo-700 font-extrabold text-xl rounded-full flex items-center justify-center mx-auto mb-4">SL</div>
+            <h3 class="font-bold text-slate-900">Sophia Lee</h3>
+            <p class="text-xs text-indigo-600 font-semibold mb-2">Head of Product</p>
+            <p class="text-slate-600 text-xs">Passionate about clean UI design and intuitive customer workflows.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="grid md:grid-cols-3 gap-6 text-center">
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <div class="text-3xl font-extrabold text-indigo-600">AI</div>
+          <div class="text-sm font-medium text-slate-500 mt-1">Agent-based support</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <div class="text-3xl font-extrabold text-indigo-600">24/7</div>
+          <div class="text-sm font-medium text-slate-500 mt-1">Customer availability</div>
+        </div>
+        <div class="bg-white p-6 rounded-xl border border-slate-200">
+          <div class="text-3xl font-extrabold text-indigo-600">1</div>
+          <div class="text-sm font-medium text-slate-500 mt-1">Unified knowledge source</div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-900 text-slate-400 text-sm border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="grid md:grid-cols-3 gap-8 items-center">
+        <div>
+          <div class="font-bold text-white text-lg mb-1">Chatbase</div>
+          <p class="text-slate-400">Build AI agents that know your business.</p>
+        </div>
+        <div class="flex md:justify-center gap-6 font-medium">
+          <a href="index.html" class="hover:text-white">Home</a>
+          <a href="about.html" class="hover:text-white">About</a>
+          <a href="contact.html" class="hover:text-white">Contact</a>
+        </div>
+        <div class="md:text-right text-slate-500">
+          © 2026 Chatbase. All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+</body>
+</html>
